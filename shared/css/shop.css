@@ -1,0 +1,319 @@
+#stickymenu_bottom_mobile {
+    display: none;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    z-index: 999;
+    left: 0;
+    background: white;
+    /* -webkit-box-shadow: 0 -2px 5px -2px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0 -2px 5px -2px rgba(0,0,0,0.2);
+    -ms-box-shadow: 0 -2px 5px -2px rgba(0,0,0,0.2);
+    -o-box-shadow: 0 -2px 5px -2px rgba(0,0,0,0.2);
+    box-shadow: 0 -2px 5px -2px rgba(0,0,0,0.2); */
+    transform: translate3d(0,0,0);
+    -webkit-transition: transform .7s cubic-bezier(.25,1,.2,1);
+    -moz-transition: transform .7s cubic-bezier(.25,1,.2,1);
+    transition: transform .7s cubic-bezier(.25,1,.2,1);
+    border-radius: 5px 5px 0 0;
+    border-top: 1px solid #d5d5d5;
+    padding: 21px 10px 14px;
+}
+@media only screen and (max-width: 1024px){
+#stickymenu_bottom_mobile {
+    display: -ms-flexbox;
+    display: flex;
+}
+#stickymenu_bottom_mobile.invisible{
+    transform: translate3d(0px,54px,0px);
+}
+}
+
+.lang-rtl #stickymenu_bottom_mobile {
+right: 0;
+left: auto
+}
+
+#stickymenu_bottom_mobile .stickymenu-item {
+text-transform: uppercase;
+display: inline-block;
+padding: 0 25px;
+text-align: center;
+position: relative;
+-ms-flex: 1 0 20%;
+flex: 1 0 20%;
+}
+@media (max-width: 480px){
+#stickymenu_bottom_mobile .stickymenu-item{
+    padding: 0 10px;
+}
+}
+#stickymenu_bottom_mobile .stickymenu-item a {
+font-size: 20px;
+font-weight: 500;
+color: black;
+}
+#stickymenu_bottom_mobile .stickymenu-item.cart_mobile {
+display: inline-flex;
+}
+#stickymenu_bottom_mobile .stickymenu-item.cart_mobile a{
+line-height: 1.75;
+position: relative;
+display: flex;
+margin: 0 auto;
+left: 0;
+top: -3px;
+right: 0;
+justify-content: center;
+align-items: center;
+color: black;
+}
+
+#stickymenu_bottom_mobile .stickymenu-item a span{
+display: none;
+font-size: 12px;
+line-height: 1;
+color: #343e45;
+text-transform: none;
+font-weight: 500;
+}
+#stickymenu_bottom_mobile .stickymenu-item a.mini-cart span.cart-count {
+position: absolute;
+top: -9px;
+right: -10px;
+display: inline-flex;
+color: #222;
+background: #fcbe00;
+border-radius: 50%;
+-webkit-border-radius: 50%;
+-moz-border-radius: 50%;
+-ms-border-radius: 50%;
+-o-border-radius: 50%;
+line-height: 17px;
+min-width: 17px;
+padding: 0;
+justify-content: center;
+align-items: center;
+font-size: 11px;
+
+}
+#amount{
+    font-family: "Samsung Sharp Sans Bold";
+    font-weight: 600;
+    font-size: 15px;
+    margin-right: 60px;
+}
+.tp-btn-square-lg{
+    font-family: "Samsung Sharp Sans Bold";
+    font-weight: 600;
+    font-size: 15px;
+}
+
+button.accordion {
+width: 100%;
+border: none;
+outline: none;
+text-align: left;
+color: black;
+cursor: pointer;
+font-family: "Samsung Sharp Sans Bold";
+font-weight: 600;
+font-size: 15px;
+transition: background-color 0.2s linear;
+}
+
+button.accordion svg {
+width: 18px;
+height: 18px;
+color: black;
+float: right;
+}
+
+button.accordion:hover,
+button.accordion.is-open {
+}
+
+.accordion-content {
+background-color: white;
+padding: 0 20px;
+max-height: 0;
+overflow: hidden;
+transition: max-height 0.2s ease-in-out;
+}
+
+.shop-product-price{
+    font-family: "Samsung Sharp Sans Bold";
+    font-weight: 600;
+    font-size:15px;
+    color: black!important;
+}
+.product-category{
+    font-family: "Samsung Sharp Sans regular";
+    font-weight: 600;
+    font-size:13px;
+    color: #d5d5d5!important;
+    margin-bottom: 1px;
+}
+.product-add-actions{
+    display: inline-flex;
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    border: 0.5px solid #d5d5d5;
+    margin-right: 19px;
+    border-radius: 8px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    transition: ease-in .3s;
+}
+
+.product-add-actions:hover svg{
+color: white;
+}
+.product-add-actions.green:hover,.product-add-actions.green:active{
+    background: #77D1BF;
+    border: none;
+    transition: ease-in .3s;
+}
+.product-add-actions.red:hover,.product-add-actions.red:active{
+    background: #EC3E4F;
+    border: none;
+    transition: ease-in .3s;
+}
+
+.product-add-actions.blue:hover,.product-add-actions.blue:active{
+    background: #3EB5EC;
+    border: none;
+    transition: ease-in .3s;
+}
+.product__add-cart-s svg{
+    color: black;
+    width: 19px;
+    height: 19px;
+    margin-left: 5px;
+    margin-right: 5px;
+    transition: ease-in .3s;
+}
+
+@media only screen and (max-width: 767px){
+    .product__item.shop-items{
+        padding: 8px;
+        margin-right: 1px;
+        margin-left: 2px;
+    }
+
+    .logo-3 .logo-image img{
+        width: 140px;
+    }
+    .side-menu button svg{
+        width: 24px!important;
+        height: 24px!important;
+    }
+}
+
+.product-view-modal-content{
+    border-radius: 25px;
+}
+
+#mobileFilters .modal-dialog{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: white;
+}
+#mobileFilters .modal-content {
+    height: auto;
+    min-height: 100%;
+    border-radius: 0;
+  }
+
+#mobileFilters .modal-header{
+    border: none!important;
+}
+#mobileFilters .modal-header h5{
+    font-family: "Samsung Sharp Sans Bold";
+    font-size: 37px;
+    font-weight: 600;
+}
+#mobileFilters .modal-footer{
+    position: fixed;
+    bottom: 0;
+    float: right;
+    height: 70px;
+    border-top: 1px solid #d5d5d5;
+    background: white;
+    width: 100%;
+}
+.mobile-reset-filter-btn{
+    background: white;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.mobile-reset-filter-btn svg{
+    color: black;
+    width: 18px;
+    height: 18px;
+}
+.mobile-filter-btn{
+    background: black;
+    border: black;
+    color: white;
+    font-size: 13px;
+    font-family: "Samsung Sharp Sans Bold";
+    font-weight: 600;
+    width: 130px;
+    height: 40px;
+}
+.mobile-filter-dismiss{
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 50%;
+    text-align: center;
+}
+.nice-select.sm-nice-select{
+    width: auto!important;
+    height: auto!important;
+    font-size: 12px;
+    margin-right: -23px;
+}
+.mobile-filter-top button svg{
+    width: 20px;
+    height: 20px;
+    color: #d5d5d5;
+}
+.mobile-filter-top button span{
+    font-family: "Samsung Sharp Sans Bold";
+    font-weight: 600;
+    font-size: 13px;
+    color: black;
+}
+.header__search-box .search-input.mobile-search{
+    border: 2px solid black;
+}
+.header__search-box .button.mobile-search-btn{
+    background: transparent;
+    border: none;
+    color: black;
+}
+.header__search-box .button.mobile-search-btn svg{
+    color: black;
+}
+
+.currency-filter{
+    width: 48px;
+    height: 39px;
+    border: 1px solid #d5d5d5;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 6px;
+    border-radius: 9px;
+}

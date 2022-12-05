@@ -1,0 +1,90 @@
+.airscream-section{
+    width: 1400px;
+    min-height:500px;
+    margin: 0 auto;
+    padding-top: 125px;
+    padding-bottom: 105px;
+    border-radius: 10px;
+    background-image: url('/shared/img/vectors/airscream-main.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.airscream-title{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.airscream-title p.airscream-sublogo{
+    font-size: 10px;
+    letter-spacing: 15px;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    font-family: "Samsung Sharp Sans Light";
+    font-weight: 400;
+}
+.airscream-title p.airscream-subtitle{
+    color: white;
+    font-size: 13px;
+    font-family: "Samsung Sharp Sans Medium";
+    font-weight: 500;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+}
+.airscream-title img{
+    width: 320px;
+    margin-bottom: 20px;
+}
+
+
+.airscream-bg-img-top{
+    position: absolute;
+    right: 378px;
+    top: 758px;
+    z-index: 0;
+}
+/* .airscream-bg-img-top img{
+
+} */
+.showcase-tabs .showcase-tab-button.airscream-nav-link.active:hover,.showcase-tabs .showcase-tab-button.airscream-nav-link.active:active{
+    border: 1px dashed white!important;
+    border-radius: 20px!important;    
+}
+
+.showcase-tabs .showcase-tab-button.airscream-nav-link.active{
+    border: 1px dashed white;
+    border-radius: 20px;
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    .airscream-section{
+        width: auto;
+        min-height:500px;
+        margin:5px;
+        padding-top: 70px;
+        padding-bottom: 40px;
+        border-radius: 10px;
+    }
+
+    .airscream-title img{
+        width: 160px;
+        margin-bottom: 20px;
+    }
+
+    .airscream-title p.airscream-sublogo{
+        font-size: 5px;
+        letter-spacing: 9px;
+    }
+
+    .airscream-title p.airscream-subtitle{
+        color: white;
+        font-size: 10px;
+        width: auto;
+    }
+    
+    
+
+}
